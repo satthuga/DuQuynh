@@ -9,11 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func onPress(_ sender: Any) {
+        let VCSecond = SecondViewController()
+        self.present(VCSecond, animated: true, completion: nil)
+        
+    }
+    
 }
 
